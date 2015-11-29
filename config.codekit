@@ -337,15 +337,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/index.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -377,6 +368,28 @@
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
+		},
+	"\/Ressources\/Screenshot (29 nov. 2015 12:30:26 PM).png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.73752e+06,
+		"inputAbbreviatedPath": "\/Ressources\/Screenshot (29 nov. 2015 12:30:26 PM).png",
+		"outputAbbreviatedPath": "\/Ressources\/Screenshot (29 nov. 2015 12:30:26 PM).png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Ressources\/Screenshot (29 nov. 2015 12:31:02 PM).png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.58836e+06,
+		"inputAbbreviatedPath": "\/Ressources\/Screenshot (29 nov. 2015 12:31:02 PM).png",
+		"outputAbbreviatedPath": "\/Ressources\/Screenshot (29 nov. 2015 12:31:02 PM).png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/Ressources\/SIGNATURE.png": {
 		"fileType": 32768,
