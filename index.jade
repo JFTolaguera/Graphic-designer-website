@@ -1,0 +1,86 @@
+doctype html
+html(lang='en')
+  head
+    title Portfolio of JF Tolaguera
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='theme-color' content='#268BD2')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
+    meta(name='description' content='Portfolio of JF Tolaguera')
+    meta(name='mobile-web-app-capable' content='yes')
+    meta(name='apple-mobile-web-app-capable' content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style' content='black')
+    meta(name='apple-mobile-web-app-title' content='Portfolio of JF Tolaguera')
+    meta(rel='icon' sizes='192x192' href='img/favicon.png')
+    link(rel='apple-touch-icon-precomposed' href='img/avatar.png')
+    link(href='http://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Mono|Montserrat:700' rel='stylesheet' type='text/css')
+    link(rel='stylesheet' type='text/css' href='assets/css/main.css')
+      
+  body#about
+    nav
+      a#current(href='index.html') About
+      a(href='work.html') Work
+      a(href='#') Process
+      
+    .wrapper
+      header
+        .headline
+          img.avatar(src='assets/img/avatar.png' alt='avatar')
+          .credentials
+            h1 JF Tolaguera
+            h3.text-1 Android designer
+            h3.text-2 Illustrator
+            h3.text-3 Web developer
+            h3.text-4 Photograph
+            h3.text-5 Artist
+        include ./_INCLUDES/illustration.html
+            
+      article
+        h1 Who I am
+        h2.lead I'm Jeff, a graphic designer working on Android & Windows Phone, front-end web developer, webdesigner, and Civil Engineering student.
+        p.col-2.first-col-2 Drawing and photography have always been hobbies of mine. Few years ago, I discovered CAD and graphic design, which I learned the ropes by myself. I've also been a big fan of Android since <a href="https://www.android.com/intl/fr_fr/history/"><strong>Ice Cream Sandwich</strong></a> (2011), and I love designing stuff on this platform.
+        p.col-2 When I design, I'm a thinker. Whatever the product, I pay attention to UX, what does the user expect. I spend hours drawing sketches, musing over how to build the most delightful experience. And I spend more designing a great interface with a strong brand identity.
+        .small-divider
+        h1 What I do
+        .col-3.first-col-3
+          h3 On Android :
+          p Android design. I work with developers on Android applications, exploring <a href="http://www.google.com/design/spec/material-design/introduction.html"><strong>Google Material Design</strong></a>. I focus on User Experience, and create UI mockups, illustrations, product/system icons, 9-patches, graphic features and more. I do the same on <a href="https://dev.windows.com/en-us/design"><strong>Windows Phone</strong></a>, which features Modern UI.
+        .col-3
+          h3 On the web :
+          p Web design and front-end development. I design mockups, wireframes and other deliverables, paying attention to ergonomics. Furthermore, I'm constantly developping my coding skills, making small websites with <strong>HTML5 &#183; CSS3 &#183; Javascript</strong>, focusing on responsive design and performance. <strong>I'm not a back-end developer</strong>.
+        .col-3.last-col-3
+          h3 And more :
+          p If I'm not designing, you can find me shooting street photography, travelling, running, playing drums or studying. 
+        .small-divider
+        h1 My skills
+        .label-box
+          p UI &sdot; UX
+          p.dash //
+          p Android design
+          p.dash //
+          p Illustration
+          p.dash //
+          p SVG
+          p.dash //
+          p Iconography
+          p.dash //
+          p HTML5 &sdot; CSS3
+          p.dash //
+          p Brand styling
+          p.dash //
+          p Photography
+               
+      .divider
+                  
+      .contact
+        h1 Let's work together ! Hit me up.
+        h2.lead You're a developer/designer looking for someone to work with you ? Feel free to contact me via this form, I'll get back to you as soon as possible.
+        form#form(method='get' action='mailto:jf.tolaguera@gmail.com')
+          input#first-name(type='text' name='first-name' placeholder='First Name')
+          input#last-name(type='text' name='last-name' placeholder='Last Name')
+          input#legal-name(type='text' name='legal-name' placeholder='Legal Name')
+          input#e-mail(type='email' name='email' placeholder='E-Mail')
+          textarea#your-project(rows='10' name='your-project' placeholder='Describe Your Project')
+        input#submit(type='submit' value='submit')
+                  
+    include ./_includes/footer.jade

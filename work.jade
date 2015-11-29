@@ -1,0 +1,94 @@
+doctype html
+html(lang='en')
+  head
+    title Portfolio of JF Tolaguera
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='theme-color' content='#268BD2')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
+    meta(name='description' content='Portfolio of JF Tolaguera')
+    meta(name='mobile-web-app-capable' content='yes')
+    meta(name='apple-mobile-web-app-capable' content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style' content='black')
+    meta(name='apple-mobile-web-app-title' content='Portfolio of JF Tolaguera')
+    meta(rel='icon' sizes='192x192' href='img/favicon.png')
+    link(rel='apple-touch-icon-precomposed' href='img/avatar.png')
+    link(href='http://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Mono|Montserrat:700' rel='stylesheet' type='text/css')
+    link(rel='stylesheet' type='text/css' href='assets/css/main.css')
+      
+  body#work
+    nav
+      a(href='index.html') About
+      a#current(href='work.html') Work
+      a(href='#') Process
+         
+    article
+      h1 On Android
+      h2.lead Material iconography : here are some product and system icons I designed.
+      
+      .container-grid
+        .tile
+          a(href="https://play.google.com/store/apps/details?id=com.babyphonemobile&hl=fr")
+            .container-img
+              .wrap
+                include ./_INCLUDES/babyphone-product-icon.html
+          .credentials
+            p.tile-title BabyPhone Mobile
+            include ./_INCLUDES/PLAY-STORE-icon.html
+            
+        .tile
+          a(href="https://play.google.com/store/apps/details?id=com.acadoid.lecturenotes")
+            .container-img.system-icons
+              include ./_INCLUDES/LECTURENOTES-icons.html
+          .credentials
+            p.tile-title LectureNotes
+            include ./_INCLUDES/PLAY-STORE-icon.html
+            
+        .tile
+          a(href="https://play.google.com/store/apps/details?id=com.babyphonemobile&hl=fr")
+            .container-img
+              .wrap
+                include ./_INCLUDES/muscle-wear-product-icon.html
+          .credentials
+            p.tile-title MuscleWear
+            include ./_INCLUDES/PLAY-STORE-icon.html
+            
+        .tile
+          a(href="https://play.google.com/store/apps/details?id=com.babyphonemobile&hl=fr")
+            .container-img
+              .wrap
+                include ./_INCLUDES/news-product-icon.html
+          .credentials
+            p.tile-title News
+            
+        .tile
+          a(href="https://play.google.com/store/apps/details?id=com.babyphonemobile&hl=fr")
+            .container-img
+              .wrap
+                include ./_INCLUDES/air-france-product-icon.html
+          .credentials
+            p.tile-title Air France remake
+            
+        .tile
+          a(href="https://play.google.com/store/apps/details?id=com.babyphonemobile&hl=fr")
+            .container-img
+              .wrap
+                include ./_INCLUDES/metro-de-paris-product-icon.html
+          .credentials
+            p.tile-title Métro de Paris
+            
+        .tile
+          a(href="https://play.google.com/store/apps/details?id=com.babyphonemobile&hl=fr")
+            .container-img
+              .wrap
+                include ./_INCLUDES/dictionary-product-icon.html
+          .credentials
+            p.tile-title Dictionary
+            
+        .tile
+          a(href="https://play.google.com/store/apps/details?id=com.babyphonemobile&hl=fr")
+            .container-img
+              .wrap
+                include ./_INCLUDES/document-product-icon.html
+          .credentials
+            p.tile-title Document

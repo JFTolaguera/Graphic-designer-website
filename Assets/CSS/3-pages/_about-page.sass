@@ -1,0 +1,321 @@
+@import "1-tools/vars"
+@import "1-tools/mixins"
+
+#about
+	// HEADER --------------------------------------------------------------------
+	.wrapper
+		overflow: hidden
+
+		header
+			height: calc(100vh - 64px)
+			@include flexbox()
+			@include flex-direction(row)
+			@include justify-content(center)
+			background: -webkit-linear-gradient(#7FCBD4 10%, #FFFCE6 90%)
+			background: -o-linear-gradient(#7FCBD4 10%, #FFFCE6 90%)
+			background: -moz-linear-gradient(#7FCBD4 10%, #FFFCE6 90%)
+			background: linear-gradient(#7FCBD4 10%, #FFFCE6 90%)
+			position: relative
+
+			.headline
+				@include flexbox
+				@include flex-direction(row)
+				flex-wrap: wrap
+				position: relative
+				top: 12%
+				height: 96px
+				@include justify-content(center)
+				@include align-items(center)
+				z-index: 1
+
+				.avatar
+					height: 100%
+					margin-right: 16px
+					@include flex(0 0 auto)
+
+				.credentials
+					height: 100%
+					@include flex(1 1 auto)
+					overflow: hidden
+					text-shadow: 0 1px 1px rgba(0,0,0,0.2)
+					color: white
+
+					h1
+						height: 50%
+						box-sizing: border-box
+						color: white
+						font-weight: 300
+						display: block
+						vertical-align: top
+						padding: 0
+
+					h3
+						height: 50%
+						box-sizing: border-box
+						position: absolute
+						color: white
+						display: block
+						line-height: 24px
+
+				@keyframes hideshow
+					0%
+						opacity: 1
+					10%
+						opacity: 1
+					15%
+						opacity: 0
+					100%
+						opacity: 0
+
+				@-webkit-keyframes hideshow
+					0%
+						opacity: 1
+					10%
+						opacity: 1
+					15%
+						opacity: 0
+					100%
+						opacity: 0
+
+				.text-1
+					animation: hideshow 10s ease infinite
+					-webkit-animation: hideshow 10s ease infinite
+
+				.text-2
+					opacity: 0
+					animation: hideshow 10s 2s ease infinite
+					-webkit-animation: hideshow 10s 2s ease infinite
+
+				.text-3
+					opacity: 0
+					animation: hideshow 10s 4s ease infinite
+					-webkit-animation: hideshow 10s 4s ease infinite
+
+				.text-4
+					opacity: 0
+					animation: hideshow 10s 6s ease infinite
+					-webkit-animation: hideshow 10s 6s ease infinite
+
+				.text-5
+					opacity: 0
+					animation: hideshow 10s 8s ease infinite
+					-webkit-animation: hideshow 10s 8s ease infinite
+
+			#illustration
+				position: absolute
+				bottom: 0px
+				left: 0px
+				width: 100%
+
+				@-webkit-keyframes translatecc
+					0%
+						transform: translateX(0px)
+					100%
+						transform: translateX(1350px)
+
+				@keyframes translatecc
+					0%
+						transform: translateX(0px)
+					100%
+						transform: translateX(1350px)
+
+				#cable_car
+					animation: translatecc 11s cubic-bezier(.63,.01,.38,1) infinite alternate
+					-webkit-animation: translatecc 11s cubic-bezier(.63,.01,.38,1) linear infinite alternate
+
+				#windows_2_ > rect
+					opacity: 0
+
+		header #illustration:hover
+			#windows_2_ > rect
+				opacity: 1
+
+	// ARTICLE -------------------------------------------------------------------
+	.col-2
+		display: block
+		float: left
+		width: 50%
+		box-sizing: border-box
+		padding: 10px 0 72px 28px
+		margin: 0
+
+	.first-col-2
+		padding: 10px 28px 72px 0
+
+	.col-3
+		display: block
+		float: left
+		width: 33%
+		box-sizing: border-box
+		padding: 28px 14px 72px
+		margin: 0
+
+	.first-col-3
+		padding-left: 0
+	.last-col-3
+		padding-right: 0
+		margin-bottom: 38px
+
+	h3
+		padding: 6px 0
+		margin: 0
+
+	.small-divider
+		background-color: #E8E8E8
+		width: 8%
+		height: 1px
+		margin: 24px 0
+		padding: 0
+		clear: both
+
+	// MY SKILLS -----------------------------------------------------------------
+	.label-box
+		padding: 16px 0
+		overflow: hidden
+		p
+			line-height: 18px
+			display: block
+			float: left
+			padding: 2px 24px 0 0
+			margin: 12px 0 4px
+		.dash
+			padding: 2px 24px 0 0
+			color: $secondary-color
+			font-weight: bold
+
+	.divider
+		background-color: #E8E8E8
+		width: 100%
+		height: 1px
+		margin: 20px 0 4%
+		padding: 0
+
+		// FORM --------------------------------------------------------------------
+	.contact
+		max-width: 1180px
+		text-align: left
+		margin: 0 auto
+		box-sizing: border-box
+
+	form
+		margin: 36px 0
+		overflow: hidden
+
+		input, textarea
+			height: 40px
+			border: none
+			box-sizing: border-box
+			border-bottom: solid 2px #eeeeee
+			float: left
+			width: 45%
+			margin-bottom: 40px
+			-webkit-transition: 0.2s ease-in-out
+			&:focus
+				border-bottom: solid 2px $primary-color
+
+		#first-name
+			margin-right: 5%
+		#legal-name
+			margin-right: 5%
+		#your-project
+			height: 200px
+			overflow: hidden
+			width: 95%
+
+		textarea:focus, input:focus
+			outline: 0
+	#submit
+		display: block
+		font-family: inherit
+		font-size: 15px
+		font-weight: bold
+		text-transform: uppercase
+		padding: 12px 44px
+		@include border-radius(3px)
+		color: white
+		box-shadow: 0 2px 4px rgba(0,0,0,0.35)
+		background-color: #2196F3
+		border: none
+		-webkit-transition: 0.15s ease-in-out
+		&:hover
+			box-shadow: 0 4px 16px rgba(0,0,0,0.45)
+			background-color: lighten($primary-color, 3%)
+		&:active
+			background-color: #1565C0
+
+// MEDIA QUERIES ---------------------------------------------------------------
+@media screen and (max-width: 800px)
+	#about
+		.wrapper
+			header
+				height: 440px
+
+				.headline
+					top: 12%
+					height: 72px
+
+					.avatar
+						height: 72px
+						width: 72px
+
+					.credentials h1
+						font-size: 24px
+
+					.credentials h3
+						font-size: 16px
+						line-height: 12px
+
+			.col-3
+				width: 100%
+				padding: 12px 0 10px
+
+@media screen and (max-width: 680px)
+	#about
+		.wrapper
+			header
+				background-size: contain
+				height: 320px
+
+				.headline .avatar
+					width: 64px
+					height: 64px
+
+				.contact-icons
+					width: 190px
+					margin: 25px auto
+
+			.small-divider
+				width: 15%
+
+			.col-2
+				width: auto
+				padding: 10px 0 48px
+
+			.first-col-2
+				padding-bottom: 10px
+
+			.label-box
+				padding: 4px 0
+				p, .dash
+					padding-right: 8px
+
+			form
+				margin-bottom: 12px
+
+				input, textarea
+					width: 100%
+					margin-bottom: 20px
+
+				#your-project
+					height: 100px
+					width: 100%
+
+			#submit
+				margin: auto
+
+@media screen and (max-width: 420px)
+	#about
+		.wrapper
+			.small-divider
+				width: 31%
+				margin: 20px auto 36px
