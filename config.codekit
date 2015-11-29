@@ -326,16 +326,14 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/Assets\/IMG\/favicon.png": {
-		"fileType": 32768,
-		"ignore": 0,
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 59015,
-		"inputAbbreviatedPath": "\/Assets\/IMG\/favicon.png",
-		"outputAbbreviatedPath": "\/Assets\/IMG\/favicon.png",
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"outputPathIsSetByUser": 0
 		},
 	"\/index.jade": {
 		"compileDebug": 1,
