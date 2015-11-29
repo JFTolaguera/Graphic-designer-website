@@ -1,13 +1,13 @@
-/* ---- 1-TOOLS ---- */
-@import "1-TOOLS/normalize";
+/* ---- 0-TOOLS ---- */
+@import "0-tools/normalize";
 
-/* ---- 2-BASICS ---- */
-@import "2-BASICS/TYPOGRAPHY";
-@import "2-BASICS/NAV-ELEMENT";
-@import "2-BASICS/FOOTER-ELEMENT";
-@import "2-BASICS/BODY-ELEMENT";
+/* ---- 1-BASICS ---- */
+@import "1-basics/typography";
+@import "1-basics/nav-element";
+@import "1-basics/footer-element";
+@import "1-basics/body-element";
 
-/* ---- 4-PAGES ---- */
-@import "4-PAGES/ABOUT-PAGE";
-@import "4-PAGES/WORK-PAGE";
-@import "4-PAGES/under-construction"
+/* ---- 3-PAGES ---- */
+@import "3-pages/about-page";
+@import "3-pages/work-page";
+@import "3-pages/under-construction"

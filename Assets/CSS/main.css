@@ -1,4 +1,4 @@
-/* ---- 1-TOOLS ---- */
+/* ---- 0-TOOLS ---- */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -357,7 +357,7 @@ td,
 th {
   padding: 0; }
 
-/* ---- 2-BASICS ---- */
+/* ---- 1-BASICS ---- */
 article {
   line-height: 25.2px;
   font-family: "Helvetica Neue", Helvetica, sans-serif; }
@@ -366,7 +366,7 @@ article {
     color: #555;
     margin: 0; }
   article a {
-    color: #2196F3;
+    color: #268BD2;
     text-decoration: none; }
     article a:hover {
       color: #E91E63; }
@@ -450,7 +450,7 @@ nav {
     color: #E91E63;
     background-color: #fafafa; }
   nav #current {
-    color: #2196F3; }
+    color: #268BD2; }
 
 @media screen and (max-width: 380px) {
   nav a {
@@ -599,7 +599,7 @@ article {
 @media screen and (max-width: 380px) {
   body {
     padding-top: 56px; } }
-/* ---- 4-PAGES ---- */
+/* ---- 3-PAGES ---- */
 #about .wrapper {
   overflow: hidden; }
   #about .wrapper header {
@@ -791,7 +791,7 @@ article {
     margin-bottom: 40px;
     -webkit-transition: 0.2s ease-in-out; }
     #about form input:focus, #about form textarea:focus {
-      border-bottom: solid 2px #2196F3; }
+      border-bottom: solid 2px #268BD2; }
   #about form #first-name {
     margin-right: 5%; }
   #about form #legal-name {
@@ -820,7 +820,7 @@ article {
   -webkit-transition: 0.15s ease-in-out; }
   #about #submit:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
-    background-color: #309df4; }
+    background-color: #2e93d9; }
   #about #submit:active {
     background-color: #1565C0; }
 
