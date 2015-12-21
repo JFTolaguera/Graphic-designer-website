@@ -974,3 +974,46 @@ article {
     height: calc(100vh - 64px); }
     #under-construction .wrapper h1 {
       margin: auto; }
+
+#process article {
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row; }
+  #process article .section {
+    box-sizing: border-box;
+    width: 22%; }
+    #process article .section .soft {
+      color: grey; }
+    #process article .section svg {
+      width: 80%;
+      margin: 0 auto; }
+    #process article .section #phase-1 #PAGE-3-STATIC {
+      z-index: 0; }
+    #process article .section #phase-1 #PAGE-1-MOTION {
+      z-index: 2;
+      animation: translatemp 3.8s cubic-bezier(0.63, 0.01, 0.38, 1) infinite alternate;
+      -webkit-animation: translatemp 11s cubic-bezier(0.63, 0.01, 0.38, 1) linear infinite alternate; }
+@-webkit-keyframes translatemp {
+  0% {
+    transform: translateX(0px); }
+  20% {
+    transform: translateX(0px); }
+  70% {
+    transform: translateX(100px); }
+  100% {
+    transform: translateX(100px); } }
+@keyframes translatemp {
+  0% {
+    transform: translateX(0px); }
+  20% {
+    transform: translateX(0px); }
+  70% {
+    transform: translateX(100px); }
+  100% {
+    transform: translateX(100px); } }
+  #process article .arrow {
+    background-color: pink;
+    width: 4% auto;
+    margin: 0 auto; }
+    #process article .arrow svg:hover {
+      fill: red; }

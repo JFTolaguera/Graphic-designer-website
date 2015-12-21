@@ -1,0 +1,48 @@
+#process
+  article
+    display: flex
+    @include flex-direction(row)
+    .section
+      box-sizing: border-box
+      width: 22%
+
+      .soft
+        color: grey
+
+      svg
+        width: 80%
+        margin: 0 auto
+        //background-color: grey
+
+      #phase-1
+        #PAGE-3-STATIC
+          z-index: 0
+        #PAGE-1-MOTION
+          z-index: 2
+          @-webkit-keyframes translatemp
+            0%
+              transform: translateX(0px)
+            20%
+              transform: translateX(0px)
+            70%
+              transform: translateX(100px)
+            100%
+              transform: translateX(100px)
+          @keyframes translatemp
+            0%
+              transform: translateX(0px)
+            20%
+              transform: translateX(0px)
+            70%
+              transform: translateX(100px)
+            100%
+              transform: translateX(100px)
+
+          animation: translatemp 3.8s cubic-bezier(.63,.01,.38,1) infinite alternate
+          -webkit-animation: translatemp 11s cubic-bezier(.63,.01,.38,1) linear infinite alternate
+    .arrow
+      background-color: pink
+      width: 4%auto
+      margin: 0 auto
+      svg:hover
+        fill: red
