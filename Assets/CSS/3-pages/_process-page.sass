@@ -1,23 +1,32 @@
 #process
   article
-    display: flex
+    @include flexbox
     @include flex-direction(row)
+    @include justify-content(center)
     .section
       box-sizing: border-box
       width: 22%
+      //background: honeydew
 
       .soft
         color: grey
+        font-style: italic
 
       svg
-        width: 80%
-        margin: 0 auto
-        //background-color: grey
+        display: block
+        width: 60%
+        margin: 30px auto
+        //background-color: pink
+
+        #phase-1
+          width: 80%
 
       #phase-1
-        #PAGE-3-STATIC
+        #PAGE-2
+          position: relative
           z-index: 0
         #PAGE-1-MOTION
+          position: relative
           z-index: 2
           @-webkit-keyframes translatemp
             0%
@@ -41,8 +50,9 @@
           animation: translatemp 3.8s cubic-bezier(.63,.01,.38,1) infinite alternate
           -webkit-animation: translatemp 11s cubic-bezier(.63,.01,.38,1) linear infinite alternate
     .arrow
-      background-color: pink
+      //background-color: pink
       width: 4%auto
       margin: 0 auto
+      margin-top: -32px
       svg:hover
         fill: red
