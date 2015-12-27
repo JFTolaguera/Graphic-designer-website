@@ -15,6 +15,15 @@ html(lang='en')
     link(rel='apple-touch-icon-precomposed' href='Assets/IMG/avatar.png')
     link(href='http://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Mono|Montserrat:700' rel='stylesheet' type='text/css')
     link(rel='stylesheet' type='text/css' href='Assets/CSS/main.css')
+    script.
+      function() {
+        if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile/)) {
+          var msViewportStyle = document.createElement("style");
+          msViewportStyle.appendChild(
+            document.createTextNode("@-ms-viewport{width:auto!important}")
+          );
+          document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+      }})();
       
   body#process
     nav
@@ -22,17 +31,17 @@ html(lang='en')
       a(href='work.html') Work
       a#current(href='process.html') Process
       
-    article
+    article.flex
       .section
         include ./_INCLUDES/phase-1.html
         h3 Project definition and contract
-        p Via the form embedded in the about page, tell me the maximum about your project. Android design ? Web development ? The more info you give me, the more efficient it will run. Explain me your ideas, and what will be my part of the job.</br><span class="soft">Info I might need : Aim for this project ? Target audience, planning, competition ?</span></br>Then I draw a quotation, and send it to you by mail. If you accept the estimation, please sign and return the quotation to me.
+        p Via the form embedded in the about page, tell me the maximum about your project. Android design ? Web development ? The more info I get, the more efficient it will run. Explain me your ideas, and what will be my part of the job.</br><span class="soft">Info I might need : Aim for this project ? Target audience, planning, competition ?</span></br>Then I draw a quotation, and send it to you by mail. If you accept the estimation, please sign and return it to me.
       .arrow
         include ./_INCLUDES/arrow-forward.html
       .section
         include ./_INCLUDES/phase-2.html
         h3 Mock-ups, review and approval cycle
-        p I'm a paper guy : I always draw some mockups on my sketchbook first, then design it on my graphic software/code editor, following your specifications. We set off a phase of reviewing, approving, fine tuning the mockup-ups until both you and me are satisfied by the design.</br><span class="soft">Main deliverables : written ideas, rough sketches, documented site map, wireframes, visual mock-ups, some lines of code for the basic design. For websites, I need all of the content provided by the client.</span>
+        p I always draw mockups on my sketchbook first, then design it on my graphic software/code editor, following your specifications. We set off a phase of reviewing, approving, fine tuning the mockup-ups until both you and me are satisfied by the design.</br><span class="soft">Main deliverables : written ideas, rough sketches, documented site map, wireframes, visual mock-ups, some lines of code for the basic design. For websites, I need all of the content provided by the client.</span>
       .arrow
         include ./_INCLUDES/arrow-forward.html
       .section
@@ -45,3 +54,14 @@ html(lang='en')
         include ./_INCLUDES/phase-4.html
         h3 Delivery, payment and maintenance
         p I send you all drawables, icons or complete site structure with HTML, CSS and JS files for websites. If needed, I can make some polishing or small improvements. When everything is ok, I send you the invoice. </br><span class="soft">Payment by : PayPal, bank transfer (details on request) or cheque payable to Jean-François Tolaguera.</span>
+        
+    article
+      h1 FAQs</br>
+      p <b>Can you do CMS development ?</b></br>No, I'm a front-end developer and web designer. I create mockups, and convert these into responsive websites. I don't handle the launching of the site online.
+      p <b>How do we communicate ?</b></br>Mostly with mails, hangouts or skype. I travel a lot, I don't have a standing phone line.
+      h1 Rates & fixed prices
+      p Usually my rates depends on the project and the amount of work. When we discuss about the project, make sure to tell me the maximum, about it's scope and details (we can schedule a phone call, hangout or skype if needed), so that I can assess a quote. Although, I have some fixed prices for some works I know well.</br>
+      <b>Android Product icon : </span><span class="price-tag">99€</span></br>Android feature or promotionnal graphic (for Play Store) : <span class="price-tag">29€</span>
+
+      
+    include ./_includes/footer.jade

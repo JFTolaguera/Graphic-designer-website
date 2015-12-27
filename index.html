@@ -15,6 +15,17 @@
     <link rel="apple-touch-icon-precomposed" href="Assets/IMG/avatar.png">
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Mono|Montserrat:700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="Assets/CSS/main.css">
+    <script>
+      function() {
+        if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile/)) {
+          var msViewportStyle = document.createElement("style");
+          msViewportStyle.appendChild(
+            document.createTextNode("@-ms-viewport{width:auto!important}")
+          );
+          document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+      }})();
+        
+    </script>
   </head>
   <body id="about">
     <nav><a id="current" href="index.html">About</a><a href="work.html">Work</a><a href="process.html">Process</a></nav>
