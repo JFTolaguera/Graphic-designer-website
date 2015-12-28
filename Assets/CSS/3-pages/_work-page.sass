@@ -2,7 +2,6 @@
 @import "0-tools/MIXINS"
 
 #work
-	article
 	.container-grid
 		@include flexbox
 		@include flex-direction(row)
@@ -20,11 +19,14 @@
 				background-color: #e4e4e4
 				width: 100%
 				height: calc(((1180px - 8vw + 16px) * 0.25) - 16px)
-				margin-bottom: 16px
+				margin-bottom: 14px
+				overflow: hidden
 
 				.wrap
 					width: 80%
 					margin: auto
+					padding: 0
+					height: 80%
 
 					svg, img
 						display: block
@@ -43,7 +45,9 @@
 					margin: auto
 
 			.credentials
-				margin: 6px 0
+				margin: 2px 0
+				padding: 0
+				max-height: 40px
 				@include flexbox
 				@include flex-direction(row)
 				@include align-items(center)
@@ -51,9 +55,10 @@
 				//background-color: rgba(207, 143, 60, 0.5)
 
 			.tile-title
-				padding-right: 18px
 				font-size: 14px
 				line-height: 20px
+				padding: 0 18px 0 0
+				margin: 0
 				//background-color: cyan
 				//@include flex(1 1 auto)
 
