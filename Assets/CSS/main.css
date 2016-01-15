@@ -825,7 +825,7 @@ article {
     border: none;
     -webkit-transition: 0.15s ease-in-out; }
     #about form input[type=submit]:hover {
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
       background-color: #2e93d9; }
     #about form input[type=submit]:active {
       background-color: #1565C0; }
