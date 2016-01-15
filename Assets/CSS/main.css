@@ -786,7 +786,7 @@ article {
 #about form {
   margin: 36px 0;
   overflow: hidden; }
-  #about form input, #about form textarea {
+  #about form input[type=text], #about form input[type=email], #about form textarea {
     height: 40px;
     border: none;
     box-sizing: border-box;
@@ -795,7 +795,7 @@ article {
     width: 45%;
     margin-bottom: 40px;
     -webkit-transition: 0.2s ease-in-out; }
-    #about form input:focus, #about form textarea:focus {
+    #about form input[type=text]:focus, #about form input[type=email]:focus, #about form textarea:focus {
       border-bottom: solid 2px #268BD2; }
   #about form #first-name {
     margin-right: 5%; }
@@ -807,27 +807,28 @@ article {
     width: 95%; }
   #about form textarea:focus, #about form input:focus {
     outline: 0; }
-#about #submit {
-  display: block;
-  font-family: inherit;
-  font-size: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 12px 44px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
-  color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
-  background-color: #2196F3;
-  border: none;
-  -webkit-transition: 0.15s ease-in-out; }
-  #about #submit:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
-    background-color: #2e93d9; }
-  #about #submit:active {
-    background-color: #1565C0; }
+  #about form input[type=submit] {
+    display: block;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 44px;
+    margin: 8px 16px 14px 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+    background-color: #2196F3;
+    border: none;
+    -webkit-transition: 0.15s ease-in-out; }
+    #about form input[type=submit]:hover {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+      background-color: #2e93d9; }
+    #about form input[type=submit]:active {
+      background-color: #1565C0; }
 
 @media screen and (max-width: 800px) {
   #about .wrapper header {

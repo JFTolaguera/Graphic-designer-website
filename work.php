@@ -11,10 +11,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Portfolio of JF Tolaguera">
-    <meta rel="icon" sizes="192x192" href="Assets/IMG/avatar.png">
-    <link rel="apple-touch-icon-precomposed" href="Assets/IMG/avatar.png">
+    <meta rel="icon" sizes="192x192" href="/assets/img/jf/avatar.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/img/jf/avatar.png">
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Mono|Montserrat:700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="Assets/CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/jf/main.css">
     <script>
       function() {
         if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile/)) {
@@ -24,11 +24,14 @@
           );
           document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
       }})();
-      
+
     </script>
   </head>
   <body id="work">
-    <nav><a href="index.html">About</a><a id="current" href="work.html">Work</a><a href="process.html">Process</a></nav>
+    <nav><a href="<?= $currentUrl; ?>index">About</a>
+      <a id="current" href="#">Work</a>
+      <a href="<?= $currentUrl; ?>process">Process</a>
+    </nav>
     <article>
       <h1>On Android</h1>
       <h2 class="lead">Material iconography : here are some product and system icons I designed.</h2>
@@ -115,7 +118,7 @@
               </div>
             </div></a>
           <div class="credentials">
-            <p class="tile-title">BabyPhone Mobile</p><?xml version="1.0" encoding="utf-8"?>
+            <p class="tile-title">BabyPhone Mobile</p>
 <svg class="ps-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
 <path d="M2,2.75c0,0.734,0,17.75,0,18.5s0.7,0.65,0.7,0.65l9.8-9.9L2.5,2C2.5,2,2,2.1,2,2.75z"/>
 <path d="M4.8,2.2l8.8,8.8l2.567-2.583c0,0-9.925-5.514-10.667-5.917S4.8,2.2,4.8,2.2z"/>
@@ -127,7 +130,7 @@
           </div>
         </div>
         <div class="tile"><a href="https://play.google.com/store/apps/details?id=com.acadoid.lecturenotes">
-            <div class="container-img system-icons"><?xml version="1.0" encoding="utf-8"?>
+            <div class="container-img system-icons">
 <svg id="LECTURENOTES-icons" version="1.1" id="SYSTEM-ICONS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 104 104" enable-background="new 0 0 104 104" xml:space="preserve">
 <g id="cutter">
@@ -180,7 +183,7 @@
 
             </div></a>
           <div class="credentials">
-            <p class="tile-title">LectureNotes</p><?xml version="1.0" encoding="utf-8"?>
+            <p class="tile-title">LectureNotes</p>
 <svg class="ps-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
 <path d="M2,2.75c0,0.734,0,17.75,0,18.5s0.7,0.65,0.7,0.65l9.8-9.9L2.5,2C2.5,2,2,2.1,2,2.75z"/>
 <path d="M4.8,2.2l8.8,8.8l2.567-2.583c0,0-9.925-5.514-10.667-5.917S4.8,2.2,4.8,2.2z"/>
@@ -319,7 +322,7 @@
               </div>
             </div></a>
           <div class="credentials">
-            <p class="tile-title">MuscleWear</p><?xml version="1.0" encoding="utf-8"?>
+            <p class="tile-title">MuscleWear</p>
 <svg class="ps-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
 <path d="M2,2.75c0,0.734,0,17.75,0,18.5s0.7,0.65,0.7,0.65l9.8-9.9L2.5,2C2.5,2,2,2.1,2,2.75z"/>
 <path d="M4.8,2.2l8.8,8.8l2.567-2.583c0,0-9.925-5.514-10.667-5.917S4.8,2.2,4.8,2.2z"/>

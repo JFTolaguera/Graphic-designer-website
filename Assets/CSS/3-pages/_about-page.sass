@@ -201,7 +201,7 @@
 		margin: 36px 0
 		overflow: hidden
 
-		input, textarea
+		input[type=text], input[type=email], textarea
 			height: 40px
 			border: none
 			box-sizing: border-box
@@ -224,24 +224,26 @@
 
 		textarea:focus, input:focus
 			outline: 0
-	#submit
-		display: block
-		font-family: inherit
-		font-size: 15px
-		font-weight: bold
-		text-transform: uppercase
-		padding: 12px 44px
-		@include border-radius(3px)
-		color: white
-		box-shadow: 0 2px 4px rgba(0,0,0,0.35)
-		background-color: #2196F3
-		border: none
-		-webkit-transition: 0.15s ease-in-out
-		&:hover
-			box-shadow: 0 4px 16px rgba(0,0,0,0.45)
-			background-color: lighten($primary-color, 3%)
-		&:active
-			background-color: #1565C0
+
+		input[type=submit]
+			display: block
+			font-family: inherit
+			font-size: 15px
+			font-weight: bold
+			text-transform: uppercase
+			padding: 12px 44px
+			margin: 8px 16px 14px 10px
+			@include border-radius(3px)
+			color: white
+			box-shadow: 0 2px 4px rgba(0,0,0,0.35)
+			background-color: #2196F3
+			border: none
+			-webkit-transition: 0.15s ease-in-out
+			&:hover
+				box-shadow: 0 4px 16px rgba(0,0,0,0.45)
+				background-color: lighten($primary-color, 3%)
+			&:active
+				background-color: #1565C0
 
 // MEDIA QUERIES ---------------------------------------------------------------
 @media screen and (max-width: 800px)

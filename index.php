@@ -11,10 +11,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Portfolio of JF Tolaguera">
-    <meta rel="icon" sizes="192x192" href="Assets/IMG/avatar.png">
-    <link rel="apple-touch-icon-precomposed" href="Assets/IMG/avatar.png">
+    <meta rel="icon" sizes="192x192" href="/assets/img/jf/avatar.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/img/jf/avatar.png">
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Mono|Montserrat:700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="Assets/CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/jf/main.css">
     <script>
       function() {
         if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile/)) {
@@ -24,14 +24,16 @@
           );
           document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
       }})();
-        
+
     </script>
   </head>
   <body id="about">
-    <nav><a id="current" href="index.html">About</a><a href="work.html">Work</a><a href="process.html">Process</a></nav>
+    <nav><a id="current" href="#">About</a>
+      <a href="<?= $currentUrl; ?>work">Work</a>
+      <a href="<?= $currentUrl; ?>process">Process</a></nav>
     <div class="wrapper">
       <header>
-        <div class="headline"><img src="Assets/IMG/avatar.png" alt="avatar" class="avatar">
+        <div class="headline"><img src="/assets/img/jf/avatar.png" alt="avatar" class="avatar">
           <div class="credentials">
             <h1>JF Tolaguera</h1>
             <h3 class="text-1">Android designer</h3>

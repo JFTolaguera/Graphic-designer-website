@@ -84,12 +84,12 @@ html(lang='en')
       .contact
         h1 Let's work together ! Hit me up.
         h2.lead You're a developer/designer looking for someone to work with you ? Feel free to contact me via this form, I'll get back to you as soon as possible.
-        form#form(method='get' action='mailto:jf.tolaguera@gmail.com')
-          input#first-name(type='text' name='first-name' placeholder='First Name')
-          input#last-name(type='text' name='last-name' placeholder='Last Name')
+        form#form(method='post' action='#')
+          input#first-name(type='text' name='first-name' placeholder='First Name' required)
+          input#last-name(type='text' name='last-name' placeholder='Last Name' required)
           input#legal-name(type='text' name='legal-name' placeholder='Legal Name')
-          input#e-mail(type='email' name='email' placeholder='E-Mail')
-          textarea#your-project(rows='10' name='your-project' placeholder='Describe Your Project')
-        input#submit(type='submit' value='submit')
+          input#e-mail(type='email' name='email' placeholder='E-Mail' required)
+          textarea#your-project(rows='10' name='your-project' placeholder='Describe Your Project' required)
+          input#submit(type='submit' value='submit')
                   
     include ./_includes/footer.jade
