@@ -8,9 +8,15 @@
       color: grey
       font-style: italic
 
+    #first
+      padding-left: 0
+    #last
+      padding-right: 0
+
     .section
       box-sizing: border-box
-      width: 22%
+      width: 25%
+      padding: 0 16px
 
       svg
         display: block
@@ -66,13 +72,6 @@
           animation: translateptrois 3s cubic-bezier(.63,.01,.38,1) infinite alternate
           -webkit-animation: translateptrois 11s cubic-bezier(.63,.01,.38,1) linear infinite alternate
 
-
-    .arrow
-      fill: $secondary-color
-      height: 32px
-      margin: 0 auto
-      margin-top: 58px
-
   article
     .price-tag
       display: inline-block
@@ -91,9 +90,10 @@
 
       .section
         width: 100%
+        padding: 12px 0
 
         svg
-          margin: -8px 8px 8px 8px
+          margin: -8px 12px 8px 8px
           float: left
       .arrow
         transform: rotate(90deg)
@@ -106,6 +106,7 @@
 
       .section
         width: 100%
+        padding: 8px 0
 
       .arrow
         transform: rotate(90deg)

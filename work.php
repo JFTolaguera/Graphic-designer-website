@@ -28,9 +28,10 @@
     </script>
   </head>
   <body id="work">
-    <nav><a href="<?= $currentUrl; ?>index">About</a>
+    <nav>
+      <a href="<?= $currentUrl; ?>index">About</a>
       <a id="current" href="#">Work</a>
-      <a href="<?= $currentUrl; ?>process">Process</a>
+      <a href="<?= $currentUrl; ?>services">Services</a>
     </nav>
     <article>
       <h1>On Android</h1>
@@ -666,6 +667,115 @@
           </div>
           <div class="credentials">
             <p class="tile-title">Dictionary</p>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="container-img">
+            <div class="wrap"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="192px" height="192px" viewBox="0 0 192 192" enable-background="new 0 0 192 192" xml:space="preserve">
+<filter  id="DropShadow-top">
+	<feOffset  in="SourceAlpha" dx="0" dy="3" result="offOut"></feOffset>
+	<feGaussianBlur  in="offOut" stdDeviation="2" result="blurOut"></feGaussianBlur>
+	<feComponentTransfer  in="blurOut" result="final">
+		<feFuncA  type="linear" slope="0.26"></feFuncA>
+	</feComponentTransfer>
+	<feBlend  mode="normal" in="SourceGraphic" in2="final"></feBlend>
+</filter>
+<g id="ICON-192-XXXHDPI">
+	<path id="shadow" fill="#1D1D1B" filter="url(#DropShadow-top)" d="M160,96c0-28.3-23.9-56.3-46-64l4-10c0.7-2.7,0.2-5.1-2.3-6.3
+		l-3.7-1.8c-9.9-5-22.1-5.2-32,0l-3.7,1.8c-2.5,1.3-3,3.6-2.3,6.3l4,10c-22,7.9-46,35.9-46,64c0,1.5,0.9,2.4,2,2.7V170
+		c0,6.6,5.4,12,12,12h100c6.6,0,12-5.4,12-12V98.7C159.1,98.4,160,97.5,160,96z M110,20l-2,10c-4.7-0.2-19.2-0.2-24,0l-2-10
+		C91.5,15.1,101.6,15,110,20z"/>
+	<linearGradient id="XMLID_42_" gradientUnits="userSpaceOnUse" x1="75.7173" y1="16.0877" x2="116.1157" y2="16.0877">
+		<stop  offset="0" style="stop-color:#006064"/>
+		<stop  offset="0.25" style="stop-color:#0097A7"/>
+		<stop  offset="0.75" style="stop-color:#0097A7"/>
+		<stop  offset="1" style="stop-color:#006064"/>
+	</linearGradient>
+	<path id="XMLID_38_" fill="url(#XMLID_42_)" d="M80,12c9.9-5.2,22.1-5,32,0c0.5,0.3,4.9,12.2,4,12c-12-7.8-28.1-7.7-40,0
+		C74.4,22.1,80,12,80,12z"/>
+	<path id="XMLID_20_" fill="#00ACC1" d="M90,44L80,12l-3.7,1.8c-2.5,1.3-3.8,4.1-3.1,6.8L76,32L90,44z"/>
+	<path id="XMLID_35_" fill="#00ACC1" d="M102,44l10-32l3.7,1.8c2.5,1.3,3.8,4.1,3.1,6.8L116,32L102,44z"/>
+	<path id="top-handle" opacity="0.45" fill="#FFFFFF" d="M76.3,14.8L80,13c9.9-5.2,22.1-5,32,0l3.7,1.8c1.9,1,3.1,2.8,3.3,4.9
+		c0.2-2.4-1.1-4.8-3.3-5.9L112,12c-9.9-5-22.1-5.2-32,0l-3.7,1.8c-2.2,1.1-3.5,3.5-3.3,5.9C73.2,17.7,74.4,15.8,76.3,14.8z"/>
+	<g id="face">
+		<rect id="XMLID_78_" x="46" y="158" fill="#90A4AE" width="26" height="26"/>
+		<rect id="XMLID_81_" x="32" y="144" fill="#90A4AE" width="14" height="14"/>
+		<rect id="XMLID_16_" x="72" y="144" fill="#90A4AE" width="26" height="14"/>
+		<path id="XMLID_80_" fill="#B0BEC5" d="M46,184h-2c-6.6,0-12-5.4-12-12v-14h14V184z"/>
+		<rect id="XMLID_181_" x="98" y="158" fill="#90A4AE" width="26" height="26"/>
+		<path id="XMLID_40_" fill="#90A4AE" d="M148,184l0-26h12v14C160,178.6,154.6,184,148,184z"/>
+		<rect id="XMLID_179_" x="72" y="158" fill="#B0BEC5" width="26" height="26"/>
+		<rect id="XMLID_183_" x="124" y="144" fill="#90A4AE" width="24" height="14"/>
+		<rect id="XMLID_182_" x="124" y="158" fill="#B0BEC5" width="24" height="26"/>
+		<rect id="XMLID_193_" x="58" y="106" fill="#90A4AE" width="26" height="26"/>
+		<polygon id="XMLID_192_" fill="#90A4AE" points="58,106 32,106 32,84 34,80 58,80 		"/>
+		<rect id="XMLID_191_" x="32" y="106" fill="#B0BEC5" width="26" height="26"/>
+		<rect id="XMLID_190_" x="58" y="80" fill="#78909C" width="26" height="26"/>
+		<rect id="XMLID_26_" x="46" y="144" fill="#78909C" width="26" height="14"/>
+		<rect id="XMLID_39_" x="98" y="144" fill="#78909C" width="26" height="14"/>
+		<rect id="XMLID_41_" x="148" y="144" fill="#78909C" width="12" height="14"/>
+		<rect id="XMLID_189_" x="110" y="106" fill="#90A4AE" width="26" height="26"/>
+		<rect id="XMLID_188_" x="84" y="80" fill="#90A4AE" width="26" height="26"/>
+		<rect id="XMLID_187_" x="84" y="106" fill="#B0BEC5" width="26" height="26"/>
+		<polygon id="XMLID_186_" fill="#90A4AE" points="160,106 136,106 136,80 158,80 160,84 		"/>
+		<rect id="XMLID_185_" x="136" y="106" fill="#B0BEC5" width="24" height="26"/>
+		<rect id="XMLID_198_" x="58" y="54" fill="#90A4AE" width="26" height="26"/>
+		<polygon id="XMLID_197_" fill="#B0BEC5" points="58,80 34,80 46,54 58,54 		"/>
+		<rect id="XMLID_196_" x="110" y="54" fill="#90A4AE" width="26" height="26"/>
+		<rect id="XMLID_195_" x="84" y="54" fill="#B0BEC5" width="26" height="26"/>
+		<polygon id="XMLID_194_" fill="#B0BEC5" points="158,80 136,80 136,54 146,54 		"/>
+		<rect id="XMLID_184_" x="110" y="80" fill="#78909C" width="26" height="26"/>
+		<polygon id="XMLID_201_" fill="#78909C" points="84,54 58,54 84,44 		"/>
+		<rect id="XMLID_200_" x="84" y="44" fill="#90A4AE" width="26" height="10"/>
+		<polygon id="XMLID_199_" fill="#78909C" points="136,54 110,54 110,44 		"/>
+	</g>
+	<g id="front_pocket">
+		<linearGradient id="zip-shadow_2_" gradientUnits="userSpaceOnUse" x1="132" y1="142" x2="163.4853" y2="173.4853">
+			<stop  offset="0.2" style="stop-color:#1D1D1B;stop-opacity:0.22"/>
+			<stop  offset="1" style="stop-color:#1D1D1B;stop-opacity:0"/>
+		</linearGradient>
+		<path id="zip-shadow_1_" fill="url(#zip-shadow_2_)" d="M130,144l-2,20l20,20c6.6,0,12-5.4,12-12v-28H130z"/>
+		<path id="zip_1_" fill="#EEEEEE" d="M138.1,144.7c-0.2-2.5-2.3-4.9-5.3-4.7c-3,0.2-4.8,2.7-4.7,5.3c0.1,2-2.3,12.1-2.1,15.2
+			c0.2,4,3.4,7.8,8.5,7.5c5-0.3,7.7-4.4,7.5-8.5C141.8,156.5,138.2,146.7,138.1,144.7z M132.9,142.1c1.7-0.1,3.1,1.2,3.2,2.8
+			c0.1,1.7-1.2,3.1-2.8,3.2c-1.7,0.1-3.1-1.2-3.2-2.8C130,143.6,131.2,142.2,132.9,142.1z M134.2,164c-2.2,0.1-4.1-1.5-4.2-3.7
+			c-0.1-2.2,1.5-4.1,3.7-4.2c2.2-0.1,4.1,1.5,4.2,3.7C138.1,162,136.4,163.9,134.2,164z"/>
+		<linearGradient id="shadow-zip-front-pocket_2_" gradientUnits="userSpaceOnUse" x1="96" y1="148" x2="96" y2="144">
+			<stop  offset="0" style="stop-color:#1D1D1B;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#000000;stop-opacity:0.2"/>
+		</linearGradient>
+		<rect id="shadow-zip-front-pocket" x="32" y="144" fill="url(#shadow-zip-front-pocket_2_)" width="128" height="4"/>
+
+			<linearGradient id="shadow-zip-front-pocket_3_" gradientUnits="userSpaceOnUse" x1="96" y1="112" x2="96" y2="106" gradientTransform="matrix(-1 0 0 -1 192 232)">
+			<stop  offset="0" style="stop-color:#1D1D1B;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#000000;stop-opacity:0.2"/>
+		</linearGradient>
+		<rect id="shadow-zip-front-pocket_1_" x="32" y="120" fill="url(#shadow-zip-front-pocket_3_)" width="128" height="6"/>
+		<path id="top-front-pocket" fill="#607D8B" d="M158,124H34c-2.2,0-4,1.8-4,4v16h132v-16C162,125.8,160.2,124,158,124z"/>
+	</g>
+	<linearGradient id="zip-shadow_3_" gradientUnits="userSpaceOnUse" x1="131" y1="61" x2="168" y2="98">
+		<stop  offset="0.2" style="stop-color:#1D1D1B;stop-opacity:0.22"/>
+		<stop  offset="1" style="stop-color:#1D1D1B;stop-opacity:0"/>
+	</linearGradient>
+	<polygon id="zip-shadow" fill="url(#zip-shadow_3_)" points="134,58 133,79 160,106 160,96 154,71 142,56 	"/>
+	<path id="zip" fill="#EEEEEE" d="M141.8,60.4c-0.3-2.5-2.6-4.7-5.6-4.3c-3,0.4-4.7,3-4.3,5.6c0.2,1.9-1.5,12.2-1.1,15.3
+		c0.5,4,3.9,7.6,8.9,6.9c5-0.6,7.5-4.9,6.9-8.9C146.3,71.9,142.1,62.4,141.8,60.4z M136.5,58.1c1.6-0.2,3.1,1,3.3,2.6
+		c0.2,1.6-1,3.1-2.6,3.3c-1.6,0.2-3.1-1-3.3-2.6C133.7,59.8,134.9,58.3,136.5,58.1z M139.2,79.9c-2.2,0.3-4.2-1.3-4.5-3.5
+		c-0.3-2.2,1.3-4.2,3.5-4.5c2.2-0.3,4.2,1.3,4.5,3.5C143,77.6,141.4,79.6,139.2,79.9z"/>
+	<g id="shadow-top" filter="url(#DropShadow-top)">
+		<path id="XMLID_44_" fill="#1D1D1B" d="M84,32c4.1-0.3,20.2-0.2,24,0c24.2,1.5,50,30,50,64c0-33.1-26.5-52-62-52S34,64.8,34,96
+			C34,65.2,60,33.9,84,32z"/>
+	</g>
+	<path id="top" fill="#607D8B" d="M30,96c0-31.8,30-66.1,54-68c4.1-0.3,20.2-0.2,24,0c24.2,1.5,54,36,54,68c0,3.8-6,3.9-6,0
+		c0-68-120-68-120,0C36,99.9,30,99.8,30,96z"/>
+	<path id="top-tint" opacity="0.4" fill="#FFFFFF" d="M84,29c4.1-0.3,20.2-0.2,24,0c24,1.5,53.5,35.4,54,67.2c0-0.1,0-0.1,0-0.2
+		c0-32-29.8-66.5-54-68c-3.8-0.2-19.9-0.3-24,0c-24,1.9-54,36.2-54,68c0,0.1,0,0.1,0,0.2C30.5,64.6,60.2,30.9,84,29z"/>
+</g>
+</svg>
+
+            </div>
+          </div>
+          <div class="credentials">
+            <p class="tile-title">Back bag</p>
           </div>
         </div>
         <div class="tile">

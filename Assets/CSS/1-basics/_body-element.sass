@@ -14,7 +14,21 @@ article
 	box-sizing: border-box
 	padding: 4vw 4vw 40px
 	overflow: hidden
-	//background-color: rgba(89, 241, 140, 0.41)
+
+.small-divider
+	background-color: #E8E8E8
+	width: 8%
+	height: 1px
+	margin: 36px 0
+	padding: 0
+	clear: both
+
+.divider
+	background-color: #E8E8E8
+	width: 100%
+	height: 1px
+	margin: 3% 0
+	padding: 0
 
 .contact
 	padding: 4%
@@ -28,6 +42,9 @@ article
 	article, .contact
 		padding: 5.5vw
 
+	.small-divider
+		width: 15%
+
 	.lead
 		max-width: 90%
 		padding: 8px 0
@@ -35,6 +52,10 @@ article
 @media screen and (max-width: 420px)
 	article, .contact
 		padding: 7%
+
+	.small-divider
+		width: 31%
+		margin: 20px auto
 
 @media screen and (max-width: 380px)
 	body

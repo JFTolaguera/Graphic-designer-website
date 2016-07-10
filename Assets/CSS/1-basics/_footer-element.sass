@@ -2,110 +2,105 @@
 @import "0-tools/vars"
 
 footer
-   background-color: #eeeeee
-   color: $footer-color
-   font-size: 13px
-   line-height: 22px
-   font-family: 'Roboto mono', sans-serif
-   padding: 40px 0
-   text-align: center
-   margin: 28px 0 0 0
+  background-color: #eeeeee
+  color: #969696
+  font-size: 13px
+  line-height: 22px
+  font-family: 'Roboto mono', sans-serif
+  padding: 40px 0
+  text-align: center
+  margin: 28px 0 0 0
 
-   .container-footer
-      opacity: 0.75
-      max-width: 1180px
-      box-sizing: border-box
-      padding: 0 25px
-      margin: auto
+  .container-footer
+    opacity: 0.75
+    max-width: 1180px
+    box-sizing: border-box
+    padding: 0 25px
+    margin: auto
+    @include flexbox()
+    @include flex-direction(row)
+
+    .copyright
+      @include flex(30 1 auto)
+      text-align: left
+
+    .tos
+      color: $footer-color
+      @include flex(1 1 auto)
+      text-decoration: none
+
+      &:hover
+        font-weight: bold
+
+    .dot
+      @include flex(0.3 1 auto)
+
+    .contact-me-icons
+      color : black
       @include flexbox()
       @include flex-direction(row)
+      @include justify-content(space-around)
+      box-sizing: border-box
+      width: 150px
+      align-items: center
+      @include flex(0 1 auto)
 
-      .copyright
-         @include flex(30 1 auto)
-         text-align: left
+      svg
+        display: block
+        width: 20px
+        height: 20px
+        -webkit-transition: -webkit-transform 0.1s ease-out, text-shadow 0.1s ease-out
+        -o-transition: -o-transform 0.1s ease-out, text-shadow 0.1s ease-out
+        transition: transform 0.1s ease-out, text-shadow 0.1s ease-out
 
-      .tos
-         color: $footer-color
-         @include flex(1 1 auto)
-         text-decoration: none
-         //font-weight: bold
-
-         &:hover
-            font-weight: bold
-
-      .dot
-         @include flex(0.3 1 auto)
-
-      .contact-me-icons
-         //background-color: orange
-         @include flexbox()
-         @include flex-direction(row)
-         @include justify-content(space-around)
-         box-sizing: border-box
-         width: 150px
-         align-items: center
-         @include flex(0 1 auto)
-
-         svg
-            display: block
-            width: 20px
-            height: 20px
-            filter: drop-shadow(0 0 0 rgba(0,0,0,0.15))
-            -webkit-filter: drop-shadow(0 0 0 rgba(0,0,0,0.15))
-
-            -webkit-transition: -webkit-transform 0.1s ease-out, text-shadow 0.1s ease-out
-            -o-transition: -o-transform 0.1s ease-out, text-shadow 0.1s ease-out
-            transition: transform 0.1s ease-out, text-shadow 0.1s ease-out
-
-            &:hover
-               color: white
-               transform: translateY(-2px)
-               -webkit-transform: translateY(-2px)
+        &:hover
+          transform: translateY(-2px)
+          -webkit-transform: translateY(-2px)
 
 // MEDIA QUERIES ------------------------------------------------------------------------
 
 @media screen and (max-width: 700px)
 
-   footer
-      padding: 30px 0
+  footer
+    padding: 30px 0
 
-      .container-footer
-         @include flex-direction(row)
-         @include justify-content(space-around)
-         flex-wrap: wrap
+    .container-footer
+      @include flex-direction(row)
+      @include justify-content(space-around)
+      flex-wrap: wrap
 
-         .dot
-            display: none
-
-         .copyright
-            text-align: center
-            padding-bottom: 25px
-            width: 50%
-
-         .tos
-            padding-bottom: 25px
-            width: 50%
-
-         .contact-me-icons
-            margin: auto
-            @include flex(0 1 auto)
-            width: 40%
-            min-width: 250px
-
-            svg
-               padding: 6px
-
-@media screen and (max-width: 430px)
-   footer .container-footer
-      @include flex-direction(column)
-
-      .contact-me-icons
-         width: 70%
+      .dot
+        display: none
 
       .copyright
-         width: auto
-         padding-bottom: 18px
+        text-align: center
+        padding-bottom: 25px
+        width: 50%
 
       .tos
-         width: auto
-         padding-bottom: 18px
+        padding-bottom: 25px
+        width: 50%
+
+      .contact-me-icons
+        margin: auto
+        @include flex(0 1 auto)
+        width: 40%
+        min-width: 250px
+
+        svg
+          padding: 6px
+
+@media screen and (max-width: 430px)
+  footer .container-footer
+    @include flex-direction(column)
+
+    .contact-me-icons
+      width: 70%
+
+    .copyright
+      width: auto
+      padding-bottom: 18px
+
+    .tos
+      width: auto
+      padding-bottom: 18px

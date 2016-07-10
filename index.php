@@ -28,9 +28,11 @@
     </script>
   </head>
   <body id="about">
-    <nav><a id="current" href="#">About</a>
+    <nav>
+      <a id="current" href="#">About</a>
       <a href="<?= $currentUrl; ?>work">Work</a>
-      <a href="<?= $currentUrl; ?>process">Process</a></nav>
+      <a href="<?= $currentUrl; ?>services">Services</a>
+    </nav>
     <div class="wrapper">
       <header>
         <div class="headline"><img src="/assets/img/jf/avatar.png" alt="avatar" class="avatar">
@@ -960,13 +962,13 @@
       <article>
         <h1>Who I am</h1>
         <h2 class="lead">I'm Jeff, a graphic designer working on Android & Windows Phone, front-end web developer, webdesigner, and Civil Engineering student.</h2>
-        <p class="col-2 first-col-2">Drawing and photography have always been hobbies of mine. Few years ago, I discovered CAD and graphic design, which I learned the ropes by myself. I've also been a big fan of Android since <a href="https://www.android.com/intl/fr_fr/history/"><strong>Ice Cream Sandwich</strong></a> (2011), and I love designing stuff on this platform.</p>
+        <p class="col-2 first-col-2">Drawing and photography have always been hobbies of mine. Few years ago, I discovered CAD and graphic design, which I learned the ropes by myself. I've also been a big fan of Android since <a href="https://www.android.com/intl/fr_fr/history/">Ice Cream Sandwich</a> (2011), and I love designing stuff on this platform.</p>
         <p class="col-2">When I design, I'm a thinker. Whatever the product, I pay attention to UX, what does the user expect. I spend hours drawing sketches, musing over how to build the most delightful experience. And I spend more designing a great interface with a strong brand identity.</p>
         <div class="small-divider"></div>
         <h1>What I do</h1>
         <div class="col-3 first-col-3">
           <h3>On Android :</h3>
-          <p>Android design. I work with developers on Android applications, exploring <a href="http://www.google.com/design/spec/material-design/introduction.html"><strong>Google Material Design</strong></a>. I focus on User Experience, and create UI mockups, illustrations, product/system icons, 9-patches, graphic features and more. I do the same on <a href="https://dev.windows.com/en-us/design"><strong>Windows Phone</strong></a>, which features Modern UI.</p>
+          <p>Android design. I work with developers on Android applications, exploring <a href="http://www.google.com/design/spec/material-design/introduction.html"><strong>Google Material Design</strong></a>. I focus on User Experience, and create UI mockups, illustrations, product/system icons, 9-patches, graphic features and more. I do the same on <a href="https://dev.windows.com/en-us/design">Windows Phone</a>, which features Modern UI.</p>
         </div>
         <div class="col-3">
           <h3>On the web :</h3>

@@ -154,19 +154,11 @@
 		padding-left: 0
 	.last-col-3
 		padding-right: 0
-		margin-bottom: 38px
+		margin-bottom: 24px
 
 	h3
 		padding: 6px 0
 		margin: 0
-
-	.small-divider
-		background-color: #E8E8E8
-		width: 8%
-		height: 1px
-		margin: 24px 0
-		padding: 0
-		clear: both
 
 	// MY SKILLS -----------------------------------------------------------------
 	.label-box
@@ -183,13 +175,6 @@
 			color: $secondary-color
 			font-weight: bold
 
-	.divider
-		background-color: #E8E8E8
-		width: 100%
-		height: 1px
-		margin: 20px 0 4%
-		padding: 0
-
 		// FORM --------------------------------------------------------------------
 	.contact
 		max-width: 1180px
@@ -197,9 +182,31 @@
 		margin: 0 auto
 		box-sizing: border-box
 
+		@keyframes apparition
+			from
+				opacity: 0
+				top : 12px
+			to
+				opacity: 1
+				top : 0px
+
+		@-webkit-keyframes apparition
+			from
+				opacity: 0
+				top : 12px
+			to
+				opacity: 1
+				top : 0px
+
+		#form-sent
+			padding: 24px 0
+			position: relative
+			animation: apparition 0.1s ease-in
+			-webkit-animation: apparition 1s ease-in
+
 	form
 		margin: 36px 0
-		overflow: hidden
+		//overflow: hidden
 
 		input[type=text], input[type=email], textarea
 			height: 40px
@@ -232,7 +239,9 @@
 			font-weight: bold
 			text-transform: uppercase
 			padding: 12px 44px
-			margin: 8px 16px 14px 10px
+			margin: 10px 16px
+			position: relative
+			left: -16px
 			@include border-radius(3px)
 			color: white
 			box-shadow: 0 2px 4px rgba(0,0,0,0.35)
@@ -286,9 +295,6 @@
 					width: 190px
 					margin: 25px auto
 
-			.small-divider
-				width: 15%
-
 			.col-2
 				width: auto
 				padding: 10px 0 48px
@@ -313,11 +319,5 @@
 					width: 100%
 
 			#submit
-				margin: auto
-
-@media screen and (max-width: 420px)
-	#about
-		.wrapper
-			.small-divider
-				width: 31%
-				margin: 20px auto
+				margin: 0
+				left: 0

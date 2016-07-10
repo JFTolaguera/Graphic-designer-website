@@ -29,7 +29,7 @@ html(lang='en')
     nav
       a(href='index.html') About
       a#current(href='work.html') Work
-      a(href='process.html') Process
+      a(href='services.html') Services
          
     article
       h1 On Android
@@ -93,6 +93,13 @@ html(lang='en')
         .tile
           .container-img
             .wrap
+              include ./_INCLUDES/back-bag-icon.html
+          .credentials
+            p.tile-title Back bag
+            
+        .tile
+          .container-img
+            .wrap
               include ./_INCLUDES/mail-product-icon.html
           .credentials
             p.tile-title Mail
@@ -103,5 +110,12 @@ html(lang='en')
               include ./_INCLUDES/document-product-icon.html
           .credentials
             p.tile-title Document
+            
+        .tile
+          .container-img
+            .wrap
+              include ./_INCLUDES/voice-fx.html
+          .credentials
+            p.tile-title Voice FX
             
   include ./_includes/footer.jade
